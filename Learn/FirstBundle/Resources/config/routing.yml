@@ -1,0 +1,3 @@
+learn_first_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: LearnFirstBundle:Default:index }
