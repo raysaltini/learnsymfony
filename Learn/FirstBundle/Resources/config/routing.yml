@@ -1,3 +1,15 @@
 learn_first_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: LearnFirstBundle:Default:index }
+
+index:
+    pattern: /index
+    defaults: { _controller: LearnFirstBundle:Hello:index }
+
+template:
+    pattern: /template
+    defaults: { _controller: LearnFirstBundle:Hello:template }
+
+hello:
+    pattern: /hello/{name}
+    defaults: { _controller: LearnFirstBundle:Hello:hello }
