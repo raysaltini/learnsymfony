@@ -1,4 +1,4 @@
 learnsymfony
 ============
 
-A collections of sample Symfony bundles for learning the basics of Symfony. 
+A collection of sample Symfony bundles for learning the framework fundamentals. 
