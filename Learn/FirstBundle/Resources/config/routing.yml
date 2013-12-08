@@ -11,5 +11,5 @@ template:
     defaults: { _controller: LearnFirstBundle:Hello:template }
 
 hello:
-    pattern: /hello/{name}
+    pattern: /hey/{name}
     defaults: { _controller: LearnFirstBundle:Hello:hello }

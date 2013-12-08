@@ -21,6 +21,8 @@ class HelloController extends Controller
 
     public function helloAction($name)
     {
+      //return a rendered template but this time around lets pass in some information from the request. 
+      return $this->render("LearnFirstBundle:Hello:hello.html.twig", array("name"=>$name));
     }
 
 }
