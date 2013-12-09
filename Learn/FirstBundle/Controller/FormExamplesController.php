@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 use Learn\FirstBundle\Entity\Product;
+use Learn\FirstBundle\Form\ProductForm;
 
 class FormExamplesController extends Controller
 {
@@ -30,6 +31,18 @@ class FormExamplesController extends Controller
         //if we are valid lets redirect.
         return $this->redirect($this->generateUrl("index"));
       }
+      
+      return $this->render("LearnFirstBundle:FormExamples:simpleForm.html.twig", array('form'=> $form->createView()));
+    }
+    
+    public function classFormAction() {
+      $product = new Product();
+      
+      $product->setSku("TestSku");
+      $product->setDescription("A test product");
+      $product->setCreated(new \DateTime());
+      
+      $form = $this->createForm(new ProductForm(), $product);
       
       return $this->render("LearnFirstBundle:FormExamples:simpleForm.html.twig", array('form'=> $form->createView()));
     }

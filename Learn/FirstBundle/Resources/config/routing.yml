@@ -21,3 +21,7 @@ LearnFirstBundle_product:
 simple_form:
     pattern: /simpleForm
     defaults: { _controller: LearnFirstBundle:FormExamples:simpleForm }
+
+class_form:
+    pattern: /classForm
+    defaults: { _controller: LearnFirstBundle:FormExamples:classForm }
