@@ -14,7 +14,10 @@ hello:
     pattern: /hey/{name}
     defaults: { _controller: LearnFirstBundle:Hello:hello }
 
-
 LearnFirstBundle_product:
     resource: "@LearnFirstBundle/Resources/config/routing/product.yml"
     prefix:   /product
+
+simple_form:
+    pattern: /simpleForm
+    defaults: { _controller: LearnFirstBundle:FormExamples:simpleForm }
