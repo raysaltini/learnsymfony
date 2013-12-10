@@ -25,3 +25,11 @@ simple_form:
 class_form:
     pattern: /classForm
     defaults: { _controller: LearnFirstBundle:FormExamples:classForm }
+    
+simple_query:
+    pattern: /simple_query
+    defaults: {_controller: LearnFirstBundle:QueryExamples:simpleQuery }
+    
+query_builder:
+    pattern: /query_builder
+    defaults: {_controller: LearnFirstBundle:QueryExamples:queryBuilder }
