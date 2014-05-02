@@ -42,11 +42,14 @@ class Product
      */
     private $created;
 
+    function __construct() {
+      $this->created = new \DateTime();
+    }
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -69,7 +72,7 @@ class Product
     /**
      * Get sku
      *
-     * @return string 
+     * @return string
      */
     public function getSku()
     {
@@ -92,7 +95,7 @@ class Product
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -115,7 +118,7 @@ class Product
     /**
      * Get created
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreated()
     {
